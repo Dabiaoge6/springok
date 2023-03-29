@@ -1,0 +1,11 @@
+version: "2.2"
+services:
+  mytest:
+    build:
+      context: ./
+      docekrfile: Dockerfile
+    images: mytest:v1.0.0
+    container_name: mytest
+    ports:
+      - "8082:8080"
+
